@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Sixtyfour&display=swap');
+
+/*? RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*? FONDO */
+body{
+    background: linear-gradient(to left,#000000ea,#59f6f1);
+    overflow-x: hidden;
+}
+/*? SCROLL */
+body::-webkit-scrollbar {
+    width: 8px;              
+}
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.9);       
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;  
+    border-radius: 20px;       
+    border: 3px double rgba(133, 255, 243, 0.83); 
+}
+/** -----------------HEADER----------- */
+header{
+    position: sticky;
+    top: 0px;
+}
+.header-index{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+nav{
+    font-family: "Sixtyfour", sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    color: #44fdfa;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+}
+.logo{
+    width: 70px;
+    border: 2px solid rgba(124, 249, 236, 0.678);
+    border-radius: 50px;
+    margin: 1px 5px;
+    box-shadow: 0 0 5px 2px rgb(115, 244, 242);
+}
+nav ul li{
+    display: inline-block;
+    flex-direction: row;
+    padding: 3px 3px 1px 3px;
+    margin: 5px;
+    list-style: none;
+}
+nav ul li a img{
+    width: 40px;
+    border-radius: 30px;
+}
+nav ul li:hover{
+    background-color: #52d2d2;
+    transition: 1.8s;
+    border-radius: 50px;
+}
+/**---------------FIN HEADER----------- */
+/*?-----------INDEX----------- */
+.titulo{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo video{
+    width: 100%;
+}
+.titulo img{
+    position: absolute;
+    width: 9vh;
+    margin-top: 40%;
+    border-radius: 50px;
+}
+
+.titulo h1{
+    font-size: 5vh;
+    text-align: center;
+    font-family: "Sixtyfour", sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: rgba(255, 255, 255, 0.8); 
+    position: absolute;
+
+}
+.tarjetas h2{
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px ;
+    color: white;
+    text-shadow: 0px 2px 4px red;
+}
+.parrafo{
+    background: radial-gradient(yellow,red);
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+}
+/*? Subtitulos General */
+.servicios h2,.productos h2,.subtitulo-nosotros h2{
+    font-family: "Sixtyfour", sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 5px;
+    color: #fff;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    
+}
+/*? Tarjetas de servicios y productos */
+.tarjetas-servicios,.tarjetas-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjetas-productos img,.tarjetas-servicios img{
+    width: 90%;
+    height: 22vh;
+    object-fit: cover;
+    margin: 9px;
+    padding: 0px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    
+}
+
+.tarjetas-servicios h3,.tarjetas-productos h3{
+    color: white;
+}
+
+.tarjetas-productos button, .tarjetas-servicios button{
+    border-radius: 10px;
+    border-style: none;
+    width: fit-content;
+    padding: 3px;
+    margin: 3px 0 3px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px#f7e469 ;
+}
+
+.tarjetas-productos section,.tarjetas-servicios section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    height: 220px;
+    width: 200px;
+    margin: 15px 1px ;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+
+}
+
+/* FIN Tarjetas de servicios */
+/* Nosotros  */
+.subtitulo-nosotros{
+    border-bottom: solid 1px #000;
+}
+.subtitulo-nosotros h2{
+    border-bottom: solid 1px #000;
+}
+.parrafo1,.parrafo2{
+    display: flex;
+    align-items: center;
+}
+.parrafo1 img,.parrafo2 img{
+    width: 50%;
+    border: solid 1px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 1px #000;
+    margin: 5px 5px;
+}
+.parrafo1 p,.parrafo2 p{
+    font-size: 3vh;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0px 30px 30px;
+    color:  rgb(132, 244, 229);
+    border: #000 solid 1px;
+    box-shadow: 0px 0px 3px 3px rgb(132, 244, 229);
+}
+.parrafo2 p{
+    border-radius: 30px 0px 30px 30px;
+}
+.parrafo2 a{
+    color: white;
+}
+/* Corte para ir al footer */
+.game-over{
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 15vh;
+}
+.game-over img{
+    width: 25%;
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+footer .footer-logo{
+    width: 80px;
+    border: 2px solid rgba(124, 249, 236, 0.678);
+    border-radius: 50px;
+    margin: 1px 5px;
+    box-shadow: 0 0 5px 2px rgb(115, 244, 242);
+}
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+footer .redes img{
+    width: 40px;
+    margin-left: 7px;
+}
+footer a{
+    color: whitesmoke;
+}
+/*?---------TITULOS DE LAS PAGINAS--------- */
+.pag-contacto,.pag-nosotros,.pag-servicios,.pag-productos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.pag-contacto h1, .pag-nosotros h1,.pag-servicios h1,.pag-productos h1{
+    color: #fff;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 0.8px;
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 4vh;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 3px 0px ;
+    padding: 5px ;
+    width: 100%;
+    overflow-x: hidden;
+}
+.pag-productos h2{
+    font-family: "Sixtyfour",sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 5px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.4px;
+}
+/*? ----------CONTACTO------------- */
+.formulario{
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    border: rgba(255, 255, 255, 0.3)  1px solid;
+    margin: 50px;
+    overflow-x: hidden;
+}
+.formulario input{
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: #000 solid 1.5px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    margin: 3px;
+}
+.formulario label{
+    color: black;
+}
+.genero{
+    display: flex;
+}
+/*? -----------SERVICIOS--------- */
+
+.tarjetas-servicios-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.tarjetas-servicios-servicios section{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border: solid 1px black;
+    height: 300px;
+    width: 95%;
+    margin: 15px 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.tarjetas-servicios-servicios img{
+    width: 50%;
+    height: 90%;
+    object-fit: cover;
+    margin: 9px;
+    padding: 0px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    
+}
+.tarjetas-servicios-servicios button{
+    border-radius: 10px;
+    border-style: none;
+    width: fit-content;
+    padding: 3px;
+    margin: 3px 0 3px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px#f7e469 ;
+}
+
+.tarjetas-main h3,.tarjetas-main p{
+    padding-bottom: 30px;
+}
